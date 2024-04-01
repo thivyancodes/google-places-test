@@ -8,7 +8,7 @@ const Map = () => {
   const latLng = useSelector((state: RootState) => state.places.latLng);
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: 'AIzaSyCCltIl-hwigBQeuolY_2jTDYL4LBhRmZA',
+    googleMapsApiKey: `${process.env.REACT_APP_API_KEY}`,
     libraries: ['places']
   });
 
