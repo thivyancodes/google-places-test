@@ -15,15 +15,7 @@ const Autocomplete = () => {
     dispatch(setAddress(value));
   };
   return (
-    <div
-      style={{
-        position: 'absolute',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        left: 0,
-        right: 0,
-        textAlign: 'center'
-      }}>
+    <div style={styles.container}>
       <PlacesAutocomplete
         value={address}
         onChange={(value) => dispatch(setAddress(value))}
